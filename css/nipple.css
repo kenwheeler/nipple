@@ -1,0 +1,16 @@
+body { -webkit-user-select: none; }
+.circle { position: absolute; display: block; background: #aa0000; height: 40px; width: 40px; margin-left: -20px; margin-top: -20px; border-radius: 40px; -webkit-transition: all .1s linear; border: 4px solid white; box-shadow: 0px 0px 5px black; }
+.circle.zoom-up { background: #aa0000 url('../img/sierramist.png') 5000px 5000px no-repeat; height: 200px; width: 200px; border-radius: 200px; margin-left: -100px; margin-top: -100px;}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { .circle.zoom-up { background: #aa0000 url('../img/sierramist.png') 5000px 5000px no-repeat; background-size: 1000px 200px; } }
+.circle ul { list-style-type: none; }
+.circle li { position: absolute; }
+.circle li a { display: block; font-size: 16px; padding: 10px; color: white; text-decoration: none; }
+.circle li.left { top: 50%; left: 10px; margin-top: -16px; }
+.circle li.up { left: 50%; top: 10px; margin-left: -16px; }
+.circle li.right { top: 50%; right: 10px; margin-top: -16px; }
+.circle li.down { left: 50%; bottom: 10px; margin-left: -16px;}
+.circle.left { background-position: -200px 0px; -webkit-transition: none;}
+.circle.up { background-position: -400px 0px; -webkit-transition: none; }
+.circle.right { background-position: -600px 0px; -webkit-transition: none; }
+.circle.down { background-position: -800px 0px; -webkit-transition: none; }
+.circle .label { position: relative; text-align: center; top: -75px; display: block; color: white; text-shadow: 1px 1px 0px black; font-size: 28px; font-family: Pacifico; background: rgba(0,0,0,.45); }
