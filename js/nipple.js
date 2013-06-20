@@ -247,25 +247,37 @@ nipple = (function() {
         yDiff = circleY - this.touchObject.curY;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (xDiff > 25) {
+            if (xDiff > 25 && xDiff < 100) {
                 this.circleNav.removeClass('up down right').addClass('left');
                 this.circleLabel.text(this.targetListLeft.data('title'));
                 this.currentSelection = "left";
-            } else if (xDiff < -25) {
+            } else if (xDiff < -25 && xDiff > -100) {
                 this.circleNav.removeClass('up down left').addClass('right');
                 this.circleLabel.text(this.targetListRight.data('title'));
                 this.currentSelection = "right";
+            } else {
+                this.circleNav.removeClass('up left right down');
+                this.circleLabel.text('');
+                this.currentSelection = null;
             }
         } else if (Math.abs(yDiff) > Math.abs(xDiff)) {
-            if (yDiff > 25) {
+            if (yDiff > 25 && yDiff < 100) {
                 this.circleNav.removeClass('down left right').addClass('up');
                 this.circleLabel.text(this.targetListUp.data('title'));
                 this.currentSelection = "up";
-            } else if (yDiff < -25) {
+            } else if (yDiff < -25 && yDiff > -100) {
                 this.circleNav.removeClass('up left right').addClass('down');
                 this.circleLabel.text(this.targetListDown.data('title'));
                 this.currentSelection = "down";
+            } else {
+               this.circleNav.removeClass('up left right down');
+                this.circleLabel.text('');
+                this.currentSelection = null; 
             }
+        } else {
+            this.circleNav.removeClass('up left right down');
+            this.circleLabel.text('');
+            this.currentSelection = null;
         }
 
     };
