@@ -1,0 +1,37 @@
+{
+    "name": "nipple",
+    "title": "nipple",
+    "description": "A jQuery plugin for clickwheel style mobile finger navigation",
+    "keywords": [
+        "mobile",
+        "touch",
+        "navigation",
+        "ipod",
+        "clickwheel"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Ken Wheeler",
+        "url": "http://www.dubmediagroup.com"
+    },
+    "maintainers": [
+        {
+            "name": "Ken Wheeler",
+            "email": "dubmediagroup@gmail.com",
+            "url": "http://www.dubmediagroup.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPLv2",
+            "url": "http://www.example.com/licenses/gpl.html"
+        }
+    ],
+    "bugs": "https://github.com/kdubbicles/nipple/issues",
+    "homepage": "https://github.com/kdubbicles/nipple",
+    "docs": "https://github.com/kdubbicles/nipple",
+    "download": "https://github.com/kdubbicles/nipple/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
