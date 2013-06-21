@@ -27,6 +27,7 @@
             "url": "http://www.example.com/licenses/gpl.html"
         }
     ],
+    "demo": "http://dubmediagroup.com/nipple",
     "bugs": "https://github.com/kdubbicles/nipple/issues",
     "homepage": "https://github.com/kdubbicles/nipple",
     "docs": "https://github.com/kdubbicles/nipple",
