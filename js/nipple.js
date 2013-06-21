@@ -204,12 +204,14 @@ nipple = (function() {
 
     nipple.prototype.checkTouch = function() {
 
+        var self = this;
+
         if (this.touchObject.curX !== null) {
             
             if(this.checkPress() === 0 && this.circleNav === null){
 
                 this.circleNav = $('<div class="circle"/>').appendTo(document.body).css({left: this.touchObject.curX, top: this.touchObject.curY});
-                self = this;
+
                 setTimeout(function(){
                     self.circleNav.addClass('zoom-up');
                     self.circleLabel = $('<span class="label"></span>').appendTo(self.circleNav);
